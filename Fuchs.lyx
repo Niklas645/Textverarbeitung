@@ -1,0 +1,237 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+2.
+ Hausübung mit LyX
+\end_layout
+
+\begin_layout Author
+Niklas Fuchs
+\end_layout
+
+\begin_layout Date
+21.10.2021
+\end_layout
+
+\begin_layout Section
+Herleitung der kleinen Lösungsformel von quadratischen Gleichungen
+\end_layout
+
+\begin_layout Standard
+Die allgemeine Form der quadratischen Gleichung kann folgendermaßen dargestellt
+ werden:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x^{2}+px+q=0
+\]
+
+\end_inset
+
+Diese Gleichung wird durch einige Schritte umgeformt:
+\begin_inset Formula 
+\[
+x^{2}+px+q=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x^{2}+px=-q
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x^{2}+px+(\frac{p}{2})^{2}=-q+(\frac{p}{2})^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+(x+\frac{p}{2})^{2}=-q+(\frac{p}{2})^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x+\frac{p}{2}=\pm\sqrt{-q+(\frac{p}{2})^{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x=-\frac{p}{2}\pm\sqrt{(\frac{p}{2})^{2}-q}
+\]
+
+\end_inset
+
+So kann man die kleine Lösungsformel herleiten.
+\end_layout
+
+\begin_layout Section
+Erklärungen und Herleitung der Formel von Cardano zu Gleichungen dritten
+ Grades
+\end_layout
+
+\begin_layout Standard
+Eine Gleichung dritten Grades hat folgende allgemeine Form:
+\begin_inset Formula 
+\[
+Ax^{3}+Bx^{2}+cx+d=0
+\]
+
+\end_inset
+
+mit 
+\begin_inset Formula $A≠0$
+\end_inset
+
+.
+ Durch Division durch A ergibt sich daraus folgende Normalform:
+\begin_inset Formula 
+\[
+x^{3}+ax^{2}+bx+c=0
+\]
+
+\end_inset
+
+Der Fundamentalsatz der Algebra liefert für eine kubische Gleichung genau
+ drei Lösungen.
+ Die Herleitung der Lösungsformel ist sehr kompliziert und wird hier nur
+ kurz angeschnitten.
+ Durch die Substitution 
+\begin_inset Formula $x=z-a^{3}$
+\end_inset
+
+ erhält man eine kubische Gleichung mit der Unbekannten z, bei der das quadratis
+che Glied fehlt.
+ Das heißt, aus
+\begin_inset Formula 
+\[
+(z-\frac{a}{3})^{3}+a(z-\frac{a}{3})^{2}+b(z-\frac{a}{3})+c=0
+\]
+
+\end_inset
+
+ergibt sich nach dem Ausführen der Multiplikationen und des zusammenfassens:
+\begin_inset Formula 
+\[
+z^{3}+pz+q=0
+\]
+
+\end_inset
+
+mit 
+\begin_inset Formula $p=b-\frac{a^{2}}{3}$
+\end_inset
+
+ und 
+\begin_inset Formula $q=\frac{ab}{3}-\frac{2}{27}a^{3}-c$
+\end_inset
+
+.
+ Auf diese reduzierte Form der kubischen Gleichung bezieht sich die folgende
+ cardanische Lösungsformel:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+z=\sqrt[3]{-\frac{q}{2}+\sqrt{(\frac{q}{2})^{2}+\frac{p^{3}}{27}}}+\sqrt[3]{-\frac{q}{2}-\sqrt{(\frac{q}{2})^{2}+\frac{p^{3}}{27}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
